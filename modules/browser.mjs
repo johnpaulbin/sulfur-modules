@@ -1,8 +1,8 @@
 export {
-  "open" : function (params) {
+  open : function (params) {
     window.open(decodeURIComponent(params[0]));
   },
-  "popup" : function (params) {
+  popup : function (params) {
     alert(decodeURIComponent(params[0]));
   }
 }
