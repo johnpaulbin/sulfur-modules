@@ -1,5 +1,0 @@
-{"name":"Skip Line","requires":["linepos","browser"]}
-
-linepos go2line:5
-browser popup:"That's not right!"
-browser popup:"This should be the first popup"
