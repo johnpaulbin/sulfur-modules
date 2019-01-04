@@ -1,4 +1,4 @@
-export {
+{
   "open" : function (params) {
     window.open(decodeURIComponent(params[0]));
   },
