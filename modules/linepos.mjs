@@ -1,9 +1,15 @@
+
 export default {
   "setpoint" : function (params) {
     sulfur.vars["linepos_" + params[0]] = sulfur.lineNumber;
   },
   "go2point" : function (params) {
-    sulfur.lineNumber = sulfur.vars["linepos_" + params[0]];
+    var pointLine = sulfur.vars["linepos_" + params[0]];
+    if (!pointLine) {
+      sulfur.lineLog("Invalid Point");
+      return;
+    }
+    sulfur.lineNumber = pointLine;
   },
   "go2line" : function (params) {
     var line = sulfur.num(params[0]);
