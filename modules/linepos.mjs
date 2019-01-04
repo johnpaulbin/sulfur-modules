@@ -1,4 +1,3 @@
-
 export default {
   "setpoint" : function (params) {
     sulfur.vars["linepos_" + params[0]] = sulfur.lineNumber;
