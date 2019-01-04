@@ -9,7 +9,7 @@ export default {
     var line = sulfur.num(params[0]);
     if (line) {
       if (line > 0 && line < sulfur.code.length) {
-        sulfur.lineNumber = line - 1; //Because increases after command
+        sulfur.lineNumber = line - 2;
         sulfur.lineLog("Moved to line " + line);
       } else {
         sulfur.lineLog(line + " is not a valid line");
