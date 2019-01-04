@@ -13,6 +13,6 @@ export default {
       return;
     }
     sulfur.lineNumber = newlinenum;
-    sulfur.lineLog("Changed to line " + newlinenum);
+    sulfur.lineLog("Changed to line " + newlinenum - 1); //Always change to newlinenum - 1 as will increase 1 after command is run
   }
 }
