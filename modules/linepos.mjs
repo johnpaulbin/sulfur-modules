@@ -7,6 +7,7 @@ export default {
   },
   "go2line" : function (params) {
     var newlinenum = Number(params[0]);
+    sulfur.lineLog(newlinenum);
     if (isNaN(newlinenum)) {
       sulfur.lineLog(params[0] + " is not a number. Skipping command.");
       return;
