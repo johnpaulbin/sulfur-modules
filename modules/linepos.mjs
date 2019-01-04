@@ -8,7 +8,7 @@ export default {
   "go2line" : function (params) {
     var line = sulfur.num(params[0]);
     if (line) {
-      if (line > 0 && line < sulfur.code.length) {
+      if (line > 0 && line < sulfur.code.length + 1) {
         sulfur.lineNumber = line - 2;
         sulfur.lineLog("Moved to line " + line);
       } else {
