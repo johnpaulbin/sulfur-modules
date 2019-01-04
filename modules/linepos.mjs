@@ -8,9 +8,10 @@ export default {
   "go2line" : function (params) {
     var newlinenum = Number(params[0]);
     if (isNaN(newlinenum)) {
-      sulfur.lineLog(sulfur.lineNumber, params[0] + " is not a number. Skipping command.");
+      sulfur.lineLog(params[0] + " is not a number. Skipping command.");
       return;
     }
     sulfur.lineNumber = newlinenum;
+    sulfur.lineLog("Changed to line " + newlinenum);
   }
 }
