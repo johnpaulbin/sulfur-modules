@@ -1,11 +1,5 @@
 export default {
-  "open" : function (params) {
-    open(decodeURIComponent(params[0]));
-  },
-  "popup" : function (params) {
-    alert(decodeURIComponent(params[0]));
-  },
-  "ask" : function (params) {
-    sulfur.vars.answer = prompt(decodeURIComponent(params[0]));
+  "setvar" : function (params) {
+    sulfur.vars[params[0]] = decodeURIComponent(params[1]);
   }
 }
