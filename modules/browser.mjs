@@ -7,5 +7,7 @@ export default {
   },
   "ask" : function (params) {
     sulfur.vars.answer = prompt(decodeURIComponent(params[0]));
+    if (!sulfur.vars.answer) sulfur.vars.answer = ""; 
+    
   }
 }
